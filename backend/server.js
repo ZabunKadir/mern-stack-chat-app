@@ -17,7 +17,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5000;
 
 const uri =
-  "mongodb+srv://admin:Admin1998.@messageapp.wctji.mongodb.net/users?retryWrites=true&w=majority";
+  "change your MongoDB URL";
 mongoose.connect(
   uri,
   {
