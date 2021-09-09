@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+$nav-logo-fonts:'Luckiest Guy', cursive;
+$nav-color: #00b7eb;
+$nav-link-fonts: "Fredoka One", cursive;
+$input-font-color: rgb(73, 73, 73);
+.contact {
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $nav-link-fonts;
+  overflow-y: hidden;
+  .contact-main{
+    width: 100%;
+  height: auto;
+  margin: auto auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $nav-link-fonts;
+  overflow-y: hidden;
+  }
+  label {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $input-font-color;
+    font-family: $nav-logo-fonts;
+    letter-spacing: 2px;
+  }
+  form {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  }
+  input {
+    margin: 20px auto;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    border-color: $nav-color;
+    color: rgb(73, 73, 73);
+    &::placeholder {
+      color: orange;
+    }
+    &:focus {
+      border-color: orange;
+      font-size: 20px;
+      box-shadow: rgba(255, 165, 0, 0.4) 0px 2px 4px, rgba(255, 165, 0, 0.3) 0px 7px 13px -3px, rgba(255, 165, 0, 0.2) 0px -3px 0px inset;
+    }
+  }
+  textarea {
+    margin: 20px auto;
+    width: 100%;
+    height: 120px;
+    font-size: 18px;
+    border-color: $nav-color;
+    resize: none;
+    color: rgb(73, 73, 73);
+    &::placeholder {
+      color: orange;
+    }
+    &:focus {
+      border-color: orange;
+      font-size: 20px;
+      box-shadow: rgba(255, 165, 0, 0.4) 0px 2px 4px, rgba(255, 165, 0, 0.3) 0px 7px 13px -3px, rgba(255, 165, 0, 0.2) 0px -3px 0px inset;
+    }
+  }
+  button {
+    width: 180px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 5px auto;
+    background-color: $nav-color;
+    font-size: 16px;
+    &:hover {
+      background-color: orange;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    height: auto;
+    form {
+      width: 100%;
+      margin: 10px 40px;
+    }
+  }
+}

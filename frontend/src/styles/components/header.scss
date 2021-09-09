@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+$nav-color: #00b7eb;
+$nav-link-color: white;
+$nav-link-fonts: 'Fredoka One', cursive;
+$nav-logo-fonts:'Luckiest Guy', cursive;
+.header {
+  width: 100%;
+  height: auto;
+  a{
+    text-decoration: none;
+    color: #00b7eb;
+    display: flex;
+    &:hover{
+      color: orange;
+    }
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    background-color: $nav-color;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+  .logo {
+    display: flex;
+    font-family: $nav-logo-fonts;
+    width: 180px;
+    height: auto;
+    font-size: 26px;
+    margin-left: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        color: white;
+    }
+  }
+  
+  .dropdown-menu{
+      background-color: $nav-link-color;
+  }
+  .dropdown-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+      color: $nav-color;
+      font-family: $nav-link-fonts;
+      &:hover{
+          color: orange;
+      }
+      .fa-icon{
+        width: 32px;
+        height: 16px;
+        margin-right: 5px;
+        margin: 5px;
+        border-right: 2px gray solid;
+        
+      }
+  }
+  .navbar-toggler{
+    &:hover{
+      border-color: white;
+    }
+    
+  }
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-link {
+    align-items: center;
+    font-family: $nav-link-fonts;
+    color: white;
+    &:hover {
+      color: orange;
+      border: 1px solid white;
+    }
+    &:focus {
+      color: rgb(255, 145, 0);
+    }
+    .fa-chat-icon{
+      width: 24px;
+      height: auto;
+      margin-right:5px ;
+    }
+  }
+  .sign-up-header{
+    width: 108px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      color: white;
+    }
+    &:focus{
+      color: white;
+    }
+  }
+}

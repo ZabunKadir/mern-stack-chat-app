@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+$nav-color: #00b7eb;
+$nav-link-color: white;
+$nav-link-fonts: "Fredoka One", cursive;
+$nav-logo-fonts: "Luckiest Guy", cursive;
+.message {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  overflow-x: hidden;
+  .message-main {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .message-main-username {
+      display: flex;
+      width: auto;
+      align-items: center;
+    }
+    .message-main-message {
+      display: flex;
+      min-width: 30%;
+      width: auto;
+      max-width: 100%;
+      align-items: center;
+      background-color: $nav-color;
+      margin-left: 10px;
+      padding: 10px;
+      color: white;
+      border-radius: 100px;
+      justify-content: center;
+      .message-main-text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+  .message-bottom {
+    width: auto;
+    height: 20%;
+    font-size: 12px;
+    font-weight: 100;
+    .message-bottom-time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: gray;
+    }
+  }
+}
+.message-own {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-end;
+  .message-main {
+    display: flex;
+    height: 80%;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .message-main-username {
+      display: flex;
+      width: auto;
+      align-items: center;
+    }
+    .message-main-message {
+      display: block;
+      min-width: 30%;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      align-items: center;
+      background-color: orange;
+      margin-left: 10px;
+      padding: 10px;
+      color: white;
+      border-radius: 100px;
+      word-wrap: break-word;
+      .message-main-text {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        word-wrap: break-word;
+      }
+    }
+  }
+  .message-bottom {
+    width: auto;
+    height: 20%;
+    font-size: 12px;
+    font-weight: 100;
+    .message-bottom-time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: gray;
+    }
+  }
+}

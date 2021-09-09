@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+$nav-color: #00b7eb;
+$nav-link-fonts: "Fredoka One", cursive;
+$input-font-color: rgb(73, 73, 73);
+$nav-logo-fonts: "Luckiest Guy", cursive;
+.login {
+  width: 100%;
+  height: 100vh;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $nav-link-fonts;
+  overflow-y: visible;
+  .title {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-family: $nav-logo-fonts;
+    letter-spacing: 2px;
+    color: $input-font-color;
+  }
+  label {
+    font-size: 18px;
+    color: orange;
+  }
+  form {
+    width: 30%;
+    height: auto;
+    padding: 60px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  }
+  input {
+    margin: 10px auto;
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+    border-color: $nav-color;
+    color: rgb(73, 73, 73);
+    &::placeholder {
+      color: orange;
+    }
+    &:focus {
+      border-color: orange;
+      font-size: 20px;
+      box-shadow: rgba(255, 165, 0, 0.4) 0px 2px 4px,
+        rgba(255, 165, 0, 0.3) 0px 7px 13px -3px,
+        rgba(255, 165, 0, 0.2) 0px -3px 0px inset;
+    }
+  }
+  .sign-up-label{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      color: $input-font-color;
+      a{
+          color: orange;
+          text-decoration: none;
+          margin-left: 10px;
+          &:hover{
+              color: $nav-color;
+          }
+      }
+  }
+  a{
+      &:hover{
+          color: black;
+      }
+  }
+  button {
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 40px auto;
+    background-color: $nav-color;
+    font-size: 18px;
+    &:hover {
+      background-color: orange;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    }
+    &:focus{
+        background-color: orange;
+    }
+  }
+  .forgot {
+    font-size: 14px;
+    color: $input-font-color;
+  }
+}
+
+@media (max-width: 599px) {
+    .login {
+      height: auto;
+      form {
+        width: 100%;
+        margin: 10px 10px;
+        padding: 20px;
+        input{
+            height: 48px;
+        }
+      }
+    }
+  }
+@media (min-width: 600px) {
+  .login {
+    height: auto;
+    form {
+      width: 70%;
+      margin: 10px 10px;
+      padding: 40px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+    .login {
+      height: auto;
+      padding: 0;
+      form {
+        width: 50%;
+        margin: 10px 40px;
+        padding: 40px;
+        input{
+            height: 48px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1599px) {
+    .login {
+      height: auto;
+      padding: 0;
+      form {
+        width: 40%;
+        margin: 10px 40px;
+        padding: 40px;
+        input{
+            height: 48px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1600px) {
+    .login {
+      height: auto;
+      padding: 0;
+      form {
+        width: 40%;
+        margin: 10px 40px;
+        padding: 40px;
+        input{
+            height: 48px;
+        }
+      }
+    }
+  }

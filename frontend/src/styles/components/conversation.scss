@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+$nav-color: #00b7eb;
+$nav-link-color: white;
+$nav-link-fonts: "Fredoka One", cursive;
+$nav-logo-fonts: "Luckiest Guy", cursive;
+.conversation{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    font-family: $nav-link-fonts;
+    &:hover{
+        border: 2px solid $nav-color;
+    }
+    .conversation-image{
+        width: 15%;
+        height: auto;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+    .conversation-label{
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: 0 10px;
+    }
+}

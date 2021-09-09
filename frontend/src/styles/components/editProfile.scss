@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+$nav-color: #00b7eb;
+$nav-link-fonts: "Fredoka One", cursive;
+$input-font-color: rgb(73, 73, 73);
+$nav-logo-fonts: "Luckiest Guy", cursive;
+.edit-profile {
+  display: flex;
+  margin: 0 0;
+  width: 100%;
+  height: 70%;
+  font-family: $nav-link-fonts;
+  input{
+    margin: 10px auto;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    border-color: $nav-color;
+    color: rgb(73, 73, 73);
+    &:focus {
+      border-color: orange;
+      font-size: 20px;
+      box-shadow: rgba(255, 165, 0, 0.4) 0px 2px 4px,
+        rgba(255, 165, 0, 0.3) 0px 7px 13px -3px,
+        rgba(255, 165, 0, 0.2) 0px -3px 0px inset;
+        color: orange;
+    }
+  }
+  select{
+    margin: 10px auto;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    border-color: $nav-color;
+    color: rgb(73, 73, 73);
+    color: orange;
+    &:focus {
+      border-color: orange;
+      font-size: 20px;
+      box-shadow: rgba(255, 165, 0, 0.4) 0px 2px 4px,
+        rgba(255, 165, 0, 0.3) 0px 7px 13px -3px,
+        rgba(255, 165, 0, 0.2) 0px -3px 0px inset;
+        color: orange;
+    }
+  }
+  .edit-profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border: 2px $nav-color solid;
+    padding: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    .edit-profile-top {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      background-color: orange;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      .edit-profile-top-label {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        .fa-label-icon{
+          width: 48px;
+          height: 48px;
+        }
+        label {
+          margin-left: 5px;
+          font-size: 22px;
+        }
+      }
+      .edit-profile-top-button {
+        width: 32px;
+        height: 32px;
+        margin: 5px 5px;
+
+        button {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:none;
+          border: none;
+          background-image: none;
+          .fa-icon{
+            padding: 5px;
+            width: 38px;
+            height: 38px;
+            color: white;
+            &:hover{
+              color: $nav-color;
+            }
+          }
+        }
+      }
+    }
+    .edit-profile-form {
+      width: 100%;
+      height: 100%;     
+      padding: 20px;
+      margin-top: 6px;
+      border-top: 2px $nav-color solid;
+      
+      label {
+        width: 100%;
+        margin: 0px auto;
+      }
+      input {
+        width: 100%;
+        margin: 10px 0;
+      }
+      select {
+        width: 100%;
+        margin: 10px 0;
+      }
+      button {
+        width: 128px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+        background-color: $nav-color;
+        &:hover {
+          background-color: orange;
+        }
+      }
+    }
+  }
+  .input-gender{
+    color: gray;
+    &:focus{
+      color: $nav-color;     
+    }   
+    option{
+      color: $nav-color;
+      &:hover{
+        color: orange;
+      }      
+    }
+  }
+  .fa-button-icon{
+    width: 48px;
+    height: 24px;
+  }
+}

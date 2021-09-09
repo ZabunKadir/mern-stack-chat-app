@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+$nav-link-fonts: "Fredoka One", cursive;
+$nav-color:#00b7eb;
+$input-font-color: rgb(73, 73, 73);
+.footer{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-top: 2px solid gray;
+    
+    .footer-top{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    a{
+        color: $nav-color;
+        text-decoration: none;
+    }
+    .app-info{
+        width: 33%;
+        margin: 20px auto;
+        padding: 0 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid gray;
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $nav-link-fonts;
+            color: $input-font-color;
+        }
+    }
+    .about{
+        width: 33%;
+        margin: 20px auto;
+        padding: 0 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid gray;
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $nav-link-fonts;
+            color: $input-font-color;
+        }
+    }
+    .social-medias{
+        width: 33%;
+        margin: 20px auto;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        div{
+            display: flex;
+            flex-direction: row;
+            .fa-social-medias-icon{
+                display: flex;
+                flex-direction: row;
+                width: 32px;
+                height: auto;
+                margin: 10px 10px;
+                color:$nav-color;
+                &:hover{
+                    color: orange;
+                }
+            }
+            label{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: $nav-link-fonts;
+                color: $input-font-color;
+            }
+        }
+        
+    }
+    .copyright{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        background-color:$nav-color ;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media (max-width:600px){
+    .footer{
+        .footer-top{
+            flex-direction: column;
+        }
+        .app-info{
+            width: 80%;
+            padding: 20px;
+            border-right: none;
+            border-bottom: 2px solid gray;
+        }
+        .about{
+            width: 80%;
+            padding: 20px;
+            border-right: none;
+            border-bottom: 2px solid gray;
+        }
+        .social-medias{
+            width: 80%;
+            padding: 20px;
+            border-right: none;
+            border-bottom: 2px solid gray;
+        }
+    }
+}
